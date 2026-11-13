@@ -49,7 +49,7 @@ export function FamilySection() {
                 </h3>
                 <div className="inline-flex items-center gap-1.5 mt-1 px-2.5 py-0.5 rounded-md bg-[#B58B35]/10 text-[#82611E] text-xs font-serif font-semibold">
                   <Award className="w-3 h-3 text-[#B58B35]" />
-                  <span>{bride.qualifications}</span>
+                  
                 </div>
               </div>
 
@@ -109,7 +109,7 @@ export function FamilySection() {
                 </h3>
                 <div className="inline-flex items-center gap-1.5 mt-1 px-2.5 py-0.5 rounded-md bg-[#B58B35]/10 text-[#82611E] text-xs font-serif font-semibold">
                   <Award className="w-3 h-3 text-[#B58B35]" />
-                  <span>{groom.qualifications}</span>
+                  
                 </div>
               </div>
 
