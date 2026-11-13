@@ -117,19 +117,19 @@ export function FamilySection() {
               <div className="space-y-4 font-serif text-sm sm:text-base text-[#302E27]">
                 <div className="p-3.5 rounded-xl bg-[#F8F3E8] border border-[#B58B35]/20">
                   <span className="text-xs uppercase tracking-wider text-[#9DA78B] block font-semibold">
-                    Son of
+                    Grandson of
                   </span>
                   <p className="font-display text-base font-semibold text-[#243A2D] mt-0.5">
-                    {groom.relationshipTitle.replace("Son of ", "")}
+                    {groom.relationshipTitle.replace("Grandson of ", "")}
                   </p>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-[#F8F3E8] border border-[#B58B35]/20">
                   <span className="text-xs uppercase tracking-wider text-[#9DA78B] block font-semibold">
-                    Father&apos;s Profession
+                    Son of
                   </span>
                   <p className="font-display text-base font-semibold text-[#243A2D] mt-0.5">
-                    {groom.fatherInfo}
+                    {groom.fatherInfo.replace("Son of ", "")}
                   </p>
                 </div>
               </div>
