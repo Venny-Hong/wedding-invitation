@@ -56,6 +56,9 @@ export function WeddingCountdown() {
     return () => clearInterval(interval);
   }, []);
 
+  const nikahEvent =
+    weddingData.events.find((event) => event.id === "nikah") ?? weddingData.events[0];
+
   const timeUnits = [
     { label: "Days", value: mounted && timeLeft ? timeLeft.days : 0 },
     { label: "Hours", value: mounted && timeLeft ? timeLeft.hours : 0 },
@@ -80,7 +83,7 @@ export function WeddingCountdown() {
         </h2>
 
         <p className="font-serif italic text-sm sm:text-base text-[#9DA78B] max-w-lg mx-auto mb-6">
-          Mehfil-e-Nikah commences on Sunday, 18 October 2026 at 12:30 PM IST
+          Mehfil-e-Nikah commences on {nikahEvent.date} at {nikahEvent.time} IST
         </p>
 
         <OrnamentalDivider variant="gold" symbol="star" className="my-4" />
@@ -126,7 +129,7 @@ export function WeddingCountdown() {
         )}
 
         <p className="font-serif text-xs text-[#9DA78B] tracking-wider uppercase mt-4">
-          Timezone: Indian Standard Time (IST) · Ballari, Karnataka
+          Timezone: Indian Standard Time (IST) · {weddingData.locationSummary}
         </p>
       </div>
     </section>
